@@ -4,7 +4,8 @@
   "npmClient": "pnpm",
   "useNx": true,
   "publishConfig": {
-    "registry": "http://localhost:4873"
+    "registry": "http://localhost:4873",
+    "access": "public"
   },
   "packages": [
     "packages/*"
