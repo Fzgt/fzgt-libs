@@ -8,13 +8,13 @@ importers:
 
   .:
     dependencies:
+      lerna:
+        specifier: ^8.2.1
+        version: 8.2.1(encoding@0.1.13)
       nx:
         specifier: ^20.6.0
         version: 20.6.0
     devDependencies:
-      lerna:
-        specifier: ^8.2.1
-        version: 8.2.1(encoding@0.1.13)
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -3240,7 +3240,7 @@ snapshots:
 
   ignore-walk@6.0.5:
     dependencies:
-      minimatch: 9.0.5
+      minimatch: 9.0.3
 
   ignore@5.3.2: {}
 
@@ -3366,7 +3366,7 @@ snapshots:
   jake@10.9.2:
     dependencies:
       async: 3.2.6
-      chalk: 4.1.0
+      chalk: 4.1.2
       filelist: 1.0.4
       minimatch: 3.1.2
 
