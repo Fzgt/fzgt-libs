@@ -1,0 +1,17 @@
+35 error Error: Command failed with exit code 1: pnpm install --lockfile-only --ignore-scripts
+35 error Scope: all 3 workspace projects
+35 error  WARN  `node_modules` is present. Lockfile only installation will make it out-of-date
+35 error Progress: resolved 1, reused 0, downloaded 0, added 0
+35 error /Users/hanguangjun/Desktop/fzgt-libs/packages/components:
+35 error  ERR_PNPM_NO_MATCHING_VERSION  No matching version found for @fzgt/hooks@^1.0.1
+35 error
+35 error This error happened while installing a direct dependency of /Users/hanguangjun/Desktop/fzgt-libs/packages/components
+35 error
+35 error The latest release of @fzgt/hooks is "1.0.0".
+35 error
+35 error If you need the full list of all 1 published versions run "$ pnpm view @fzgt/hooks versions".
+35 error     at makeError (/Users/hanguangjun/Desktop/fzgt-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/lib/error.js:59:11)
+35 error     at handlePromise (/Users/hanguangjun/Desktop/fzgt-libs/node_modules/.pnpm/execa@5.0.0/node_modules/execa/index.js:114:26)
+35 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+35 error     at async VersionCommand.updatePackageVersions (/Users/hanguangjun/Desktop/fzgt-libs/node_modules/.pnpm/lerna@8.2.1_encoding@0.1.13/node_modules/lerna/dist/index.js:9868:11)
+35 error     at async Promise.all (index 0)

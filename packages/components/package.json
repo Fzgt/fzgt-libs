@@ -1,6 +1,6 @@
 {
   "name": "@fzgt/components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fzgt/hooks": "^1.0.0"
+    "@fzgt/hooks": "^1.0.1"
   }
 }
