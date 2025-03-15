@@ -3,7 +3,7 @@
 35 error  WARN  `node_modules` is present. Lockfile only installation will make it out-of-date
 35 error Progress: resolved 1, reused 0, downloaded 0, added 0
 35 error /Users/hanguangjun/Desktop/fzgt-libs/packages/components:
-35 error  ERR_PNPM_NO_MATCHING_VERSION  No matching version found for @fzgt/hooks@^1.0.1
+35 error  ERR_PNPM_NO_MATCHING_VERSION  No matching version found for @fzgt/hooks@^1.0.2
 35 error
 35 error This error happened while installing a direct dependency of /Users/hanguangjun/Desktop/fzgt-libs/packages/components
 35 error
