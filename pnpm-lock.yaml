@@ -26,13 +26,19 @@ importers:
         version: 3.2.6(react@19.0.0)(storybook@8.6.6)
       '@storybook/addon-essentials':
         specifier: ^8.6.6
-        version: 8.6.6(@types/react@19.0.10)(storybook@8.6.6)
+        version: 8.6.6(@types/react@19.0.12)(storybook@8.6.6)
       '@storybook/addon-interactions':
         specifier: ^8.6.6
         version: 8.6.6(storybook@8.6.6)
       '@storybook/addon-onboarding':
         specifier: ^8.6.6
         version: 8.6.6(storybook@8.6.6)
+      '@storybook/addon-styling-webpack':
+        specifier: ^1.0.1
+        version: 1.0.1(storybook@8.6.6)(webpack@5.98.0(@swc/core@1.11.9)(esbuild@0.25.1))
+      '@storybook/addon-themes':
+        specifier: ^8.6.7
+        version: 8.6.7(storybook@8.6.6)
       '@storybook/addon-webpack5-compiler-swc':
         specifier: ^3.0.0
         version: 3.0.0(webpack@5.98.0(@swc/core@1.11.9)(esbuild@0.25.1))
@@ -51,6 +57,12 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.0.15
         version: 4.0.15
+      '@types/react':
+        specifier: ^19.0.12
+        version: 19.0.12
+      '@types/react-dom':
+        specifier: ^19.0.4
+        version: 19.0.4(@types/react@19.0.12)
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -640,6 +652,16 @@ packages:
     peerDependencies:
       storybook: ^8.6.6
 
+  '@storybook/addon-styling-webpack@1.0.1':
+    resolution: {integrity: sha512-5n+SXPfMTc4m7sWaJWPWjoHYWc6/B111M2Ia55toQ3GV4ON4vVlTgH9FX+EgCkDticElj99HLTMDJkHRj2yvkg==}
+    peerDependencies:
+      webpack: ^5.0.0
+
+  '@storybook/addon-themes@8.6.7':
+    resolution: {integrity: sha512-8yKmeg4kdK6Jr0c5EsnlR0QJCzg/oQVe5FxC9BeRBqVWujkA17kr11f5jRwlprt+nfn/V0JPIa75kNV9bCFmeg==}
+    peerDependencies:
+      storybook: ^8.6.7
+
   '@storybook/addon-toolbars@8.6.6':
     resolution: {integrity: sha512-xdmCIJQXY8V8bmVcK0VcKx79doHe3LEZ/PUKaH3cnd8IZ/Lltp3hySDH0oLK1JrSGEouVcIDCboSOhJZZ/Qbsg==}
     peerDependencies:
@@ -715,6 +737,11 @@ packages:
 
   '@storybook/manager-api@8.6.6':
     resolution: {integrity: sha512-Wm/PvY9IZuCGxlqg2Rt6M95WaXnCPl0wHunTD6vDIgnnjzEzLUeigrsHOSh617tIOQ1F9i3J9UegaslImuqXGg==}
+    peerDependencies:
+      storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+
+  '@storybook/node-logger@8.6.7':
+    resolution: {integrity: sha512-TuiHy91ug/1Scg7P3nekIj9pupGHhKJEyG4m8JK5qehAQ00G3mftqyvrojcciOthGNRARDVxpMSOHJoO5uLTPQ==}
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
 
@@ -1012,8 +1039,13 @@ packages:
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
 
-  '@types/react@19.0.10':
-    resolution: {integrity: sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==}
+  '@types/react-dom@19.0.4':
+    resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
+    peerDependencies:
+      '@types/react': ^19.0.0
+
+  '@types/react@19.0.12':
+    resolution: {integrity: sha512-V6Ar115dBDrjbtXSrS+/Oruobc+qVbbUxDFC1RSbRqLt5SYvxxyIDrSC85RWml54g+jfNeEMZhEj7wW07ONQhA==}
 
   '@types/resolve@1.20.6':
     resolution: {integrity: sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==}
@@ -4199,10 +4231,10 @@ snapshots:
       - supports-color
       - typescript
 
-  '@mdx-js/react@3.1.0(@types/react@19.0.10)(react@19.0.0)':
+  '@mdx-js/react@3.1.0(@types/react@19.0.12)(react@19.0.0)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 19.0.10
+      '@types/react': 19.0.12
       react: 19.0.0
 
   '@napi-rs/wasm-runtime@0.2.4':
@@ -4520,9 +4552,9 @@ snapshots:
       storybook: 8.6.6
       ts-dedent: 2.2.0
 
-  '@storybook/addon-docs@8.6.6(@types/react@19.0.10)(storybook@8.6.6)':
+  '@storybook/addon-docs@8.6.6(@types/react@19.0.12)(storybook@8.6.6)':
     dependencies:
-      '@mdx-js/react': 3.1.0(@types/react@19.0.10)(react@19.0.0)
+      '@mdx-js/react': 3.1.0(@types/react@19.0.12)(react@19.0.0)
       '@storybook/blocks': 8.6.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.6.6)
       '@storybook/csf-plugin': 8.6.6(storybook@8.6.6)
       '@storybook/react-dom-shim': 8.6.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.6.6)
@@ -4533,12 +4565,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@storybook/addon-essentials@8.6.6(@types/react@19.0.10)(storybook@8.6.6)':
+  '@storybook/addon-essentials@8.6.6(@types/react@19.0.12)(storybook@8.6.6)':
     dependencies:
       '@storybook/addon-actions': 8.6.6(storybook@8.6.6)
       '@storybook/addon-backgrounds': 8.6.6(storybook@8.6.6)
       '@storybook/addon-controls': 8.6.6(storybook@8.6.6)
-      '@storybook/addon-docs': 8.6.6(@types/react@19.0.10)(storybook@8.6.6)
+      '@storybook/addon-docs': 8.6.6(@types/react@19.0.12)(storybook@8.6.6)
       '@storybook/addon-highlight': 8.6.6(storybook@8.6.6)
       '@storybook/addon-measure': 8.6.6(storybook@8.6.6)
       '@storybook/addon-outline': 8.6.6(storybook@8.6.6)
@@ -4576,6 +4608,18 @@ snapshots:
   '@storybook/addon-outline@8.6.6(storybook@8.6.6)':
     dependencies:
       '@storybook/global': 5.0.0
+      storybook: 8.6.6
+      ts-dedent: 2.2.0
+
+  '@storybook/addon-styling-webpack@1.0.1(storybook@8.6.6)(webpack@5.98.0(@swc/core@1.11.9)(esbuild@0.25.1))':
+    dependencies:
+      '@storybook/node-logger': 8.6.7(storybook@8.6.6)
+      webpack: 5.98.0(@swc/core@1.11.9)(esbuild@0.25.1)
+    transitivePeerDependencies:
+      - storybook
+
+  '@storybook/addon-themes@8.6.7(storybook@8.6.6)':
+    dependencies:
       storybook: 8.6.6
       ts-dedent: 2.2.0
 
@@ -4688,6 +4732,10 @@ snapshots:
       storybook: 8.6.6
 
   '@storybook/manager-api@8.6.6(storybook@8.6.6)':
+    dependencies:
+      storybook: 8.6.6
+
+  '@storybook/node-logger@8.6.7(storybook@8.6.6)':
     dependencies:
       storybook: 8.6.6
 
@@ -4995,7 +5043,11 @@ snapshots:
 
   '@types/parse-json@4.0.2': {}
 
-  '@types/react@19.0.10':
+  '@types/react-dom@19.0.4(@types/react@19.0.12)':
+    dependencies:
+      '@types/react': 19.0.12
+
+  '@types/react@19.0.12':
     dependencies:
       csstype: 3.1.3
 
