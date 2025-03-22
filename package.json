@@ -28,7 +28,10 @@
     "@storybook/react": "^8.6.6",
     "@storybook/react-webpack5": "^8.6.6",
     "@storybook/test": "^8.6.6",
+    "@tailwindcss/postcss": "^4.0.15",
+    "postcss": "^8.5.3",
     "storybook": "^8.6.6",
+    "tailwindcss": "^4.0.15",
     "typescript": "^5.8.2"
   }
 }
