@@ -1,7 +1,7 @@
 import type { Preview } from '@storybook/react'
 import '../packages/components/index.css'
-// import { withThemeByClassName } from '@storybook/addon-themes';
-import { withThemeByDataAttribute } from '@storybook/addon-themes';
+import { withThemeByClassName } from '@storybook/addon-themes';
+// import { withThemeByDataAttribute } from '@storybook/addon-themes';
 
 const preview: Preview = {
   parameters: {
@@ -13,21 +13,21 @@ const preview: Preview = {
     },
   },
   decorators: [
-    // withThemeByClassName({
-    //   themes: {
-    //     light: 'light',
-    //     dark: 'dark',
-    //   },
-    //   defaultTheme: 'light',
-    // }),
-    withThemeByDataAttribute({
+    withThemeByClassName({
       themes: {
         light: 'light',
         dark: 'dark',
       },
       defaultTheme: 'light',
-      attributeName: 'data-mode',
     }),
+    // withThemeByDataAttribute({
+    //   themes: {
+    //     light: 'light',
+    //     dark: 'dark',
+    //   },
+    //   defaultTheme: 'light',
+    //   attributeName: 'data-mode',
+    // }),
   ],
 };
 
