@@ -26,7 +26,7 @@ const config: StorybookConfig = {
       name: 'webpack5',
       options: {
         fsCache: true,
-        lazyCompilation: true,
+        lazyCompilation: true, // 直观的效果就是打开Storybook后，切换路由的时候能看到loading效果，说明它在编译，只有路由命中才编译。
       }
     }
   }
